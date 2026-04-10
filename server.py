@@ -13,7 +13,7 @@ import re
 app = FastMCP(name="Vision System with ESP32 Control")
 
 LM_STUDIO_URL = "http://127.0.0.1:1234/v1/chat/completions"
-MODEL_NAME = "mistralai/ministral-3-3b"
+MODEL_NAME = "qwen3-vl-4b-instruct"
 
 # 🔥 sesión persistente (mejor rendimiento)
 requests_session = requests.Session()
