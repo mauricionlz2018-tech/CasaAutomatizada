@@ -14,7 +14,7 @@ import re
 app = FastMCP(name="Vision System with ESP32 Control")
 
 LM_STUDIO_URL = "http://127.0.0.1:1234/v1/chat/completions"
-MODEL_NAME = "ministral-3-3b-instruct-2512"  # Nombre exacto en LM Studio
+MODEL_NAME = "ministral-3-3b-instruct-2512"  # Nombre exacto para LM Studio 
 
 # API Key de LM Studio — encuéntrala en:
 # LM Studio → Developer → Local Server → Server Settings → API Key
