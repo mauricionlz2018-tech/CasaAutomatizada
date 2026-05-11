@@ -19,7 +19,7 @@ MODEL_NAME = "ministral-3-3b-instruct-2512"  # Nombre exacto para LM Studio
 # API Key de LM Studio — encuéntrala en:
 # LM Studio → Developer → Local Server → Server Settings → API Key
 # Si no tienes autenticación activada, deja vacío ""
-LM_STUDIO_API_KEY = "sk-lm-QJzLfwxT:5bMwT58LYeLgplyva2C7"  # <- ej: "lm-studio-xxxxxxxxxxxx"
+LM_STUDIO_API_KEY = "sk-lm-0AKvlNRV:2SueRl32BR3WNx3Wd4lS"  # <- ej: "lm-studio-xxxxxxxxxxxx"
 
 # sesión persistente con Authorization header en TODAS las peticiones
 requests_session = requests.Session()
@@ -31,7 +31,7 @@ last_image_base64 = None
 camera_index = None
 
 # Configuración ESP32 (reemplazando Arduino)
-ESP32_SERIAL_PORT = "COM9"  #  Usa tú puerto del ESP32
+ESP32_SERIAL_PORT = "COM3"  #  Usa tú puerto del ESP32
 ESP32_BAUD_RATE = 115200
 esp32_serial = None
 

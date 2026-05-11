@@ -29,7 +29,7 @@ import json
 import httpx
 
 # ── Configuración ──────────────────────────────────────────────────────────────
-
+# 
 # Nombre del modelo TAL COMO aparece en LM Studio (pestaña My Models o el
 # identificador que muestra el servidor en GET http://localhost:1234/v1/models)
 MODEL_NAME    = "ministral-3-3b-instruct-2512"
@@ -42,7 +42,7 @@ MAX_TOOL_TURNS = 10                           # Máximo de rondas tool-use por c
 # API Key de LM Studio (si tienes autenticación activada en el servidor local).
 # Encuéntrala en LM Studio → Local Server → pestaña API → campo "API Key".
 # Si no tienes autenticación, deja vacío "".
-LMS_API_KEY   = "sk-lm-QJzLfwxT:5bMwT58LYeLgplyva2C7"   # <- ej: "lm-studio-xxxxxxxxxxxx"
+LMS_API_KEY   = "sk-lm-0AKvlNRV:2SueRl32BR3WNx3Wd4lS"   # <- ej: "lm-studio-xxxxxxxxxxxx"
 
 # API Key del servidor MCP (si tu maestro la configuró en FastMCP).
 MCP_API_KEY   = ""   # <- ej: "mi-clave-secreta"
