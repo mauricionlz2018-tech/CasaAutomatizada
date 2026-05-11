@@ -51,20 +51,24 @@ pip install fastmcp pyserial requests opencv-python httpx
 ```
 
 En Arduino IDE se instala la librería necesaria para el ESP32Servo\
+
 ![Librería Servo](./images/libreria_servo.png)
 
 Se agrega la placa para el ESP32
+
 ![Placa ESP32](./images/placa_esp32.png)
 
 Se abre el archivo .ino que se encuentra en la carpeta `source_code` y se carga al ESP32 conectado al computador.
 
 ## Uso
 Se tiene que tener conectado el ESP2 y una web-cam al computador, en el caso del ESP32 se debe de consultar el puerto COM al que se conecto desde el administrador de dispositivos (se accede a un menú presionando `ctrl + x` y se selecciona la opción de administrador de dispositivos):
+
 ![Puerto COM](./images/puerto_com.png)
 
 Se accede al código del servidor mcp llamado `server2.py` y se tendrán que modificar dos líneas de código:
 1. El puerto COM, se coloca el que aparece en el administrador de dispositivos.
 2. El modelo, pero este se modifica más adelante.
+
 ![Modificar código](./images/modificar_codigo.png)
 
 ### Descargar modelo en LM Studio
@@ -86,15 +90,19 @@ fastmcp run server2.py:app --transport=http
 En el apartado de `chat` (icono de personaje morado en la parte izquierda superior), del lado derecho, se dara clic en el icono del `martillo`, se selecciona `install` y se elige `editar mcp.json`.
 
 Se mostrara un archivo .json, el cual contendra lo siguiente:
+
 ![contenido mcp json](./images/contenido_mcp_json.png)
 
 En el apartado de `Developer` se tendra que encender el servidor local del LLM Studio para poder comunicarse correctamente con el servidor:
+
 ![Encender servidor LLM Studio](./images/encender_servidor_llm.png)
 
 Y se tendra que seleccionar `Server Settings` para configurar una API Key que servira como autenticación.
+
 ![Generar API KEY](./images/api_key.png)
 
 Se tendra que cargar el modelo que se descargo, seleccionando la opcion de `load a model to load` de la parte superior:
+
 ![Cargar modelo](./images/cargar_modelo.png)
 
 ### Ejecución del Script para la automatización
@@ -107,4 +115,5 @@ python agente_lmstudio1.py
 Y automaticamente comenzara a realizar el procedimiento para poder utilizar el modelo y las herramientas, la casa automatica estará en funcionamiento, el modelo analizará la distancia del sensor ultrasonico, si es menor a 50 cm, tomará una foto, la analizará y determinará que hacer.
 
 En este caso, al detectar una persona, abre la puerta y enciende la led, para después de 4 segundos apagar la led y cerrar la puerta (simulando que la persona ingresó a la casa).
+
 ![Maqueta puerta abierta](./images/maqueta_abrir_ouerta.jpeg)
